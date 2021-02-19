@@ -12,6 +12,17 @@ import HelloWorld from '@/components/HelloWorld.vue' // @ is an alias to /src
 @Options({
   components: {
     HelloWorld
+  },
+  data() {
+    return {
+      a:1
+    }
+  },
+  methods:{
+    aaa():String{
+      const a:Array<number> = [12312,12312];    
+      return '123123';
+   }
   }
 })
 export default class Home extends Vue {}
